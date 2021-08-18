@@ -3,7 +3,8 @@
 # Usage: !url website
 # Dependencies: os, asyncio, configs
 
-import os, asyncio, configs, video_module
+from modules.video_module import video_duration
+import os, asyncio, configs
 
 from lib import helpers
 
@@ -12,7 +13,6 @@ async def url(ctx, txt):
     await ctx.send("Launching the Website")
     print(txt)
     list = txt.split(" ")
-    video_link = txt.split(" ")
 
     for i in range(len(list)):
         if list[0].__contains__('https'):
@@ -27,9 +27,9 @@ async def url(ctx, txt):
                 os.system("start {0}".format(txt))
                 media_control.media_key_fullscreen()
                 # //DEBUGGING
-                await ctx.send(list)
-                await ctx.send(video_module.video_duration(video_link))
-                # put time between commands
+                # await ctx.send(video_module.video_duration(video_link))
+                await ctx.send(video_duration(list[0]))
+                # put time between commands and return focus to main thread
                 await asyncio.sleep(2)
             else:
                 await ctx.send("The URL you entered is not available.")

@@ -121,14 +121,6 @@ async def abort(ctx):
     await abort_module.abort(ctx)
 
 
-# Module: Video Duration
-# Description: Show the duration of a video in chat
-# Usage: !video_duration
-@client.command()
-@Logger(client)
-async def video_duration(ctx, video_url):
-    await video_module.video_duration(video_url)
-
 # Module: appQuitter
 # Description: Quits the application
 # Usage: !appquitter "Application Name" or !appquitter "Application Name" minutesToQuit
