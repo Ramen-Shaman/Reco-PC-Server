@@ -7,3 +7,5 @@ def video_duration(video_link):
 
 
 
+    return video_duration
+
