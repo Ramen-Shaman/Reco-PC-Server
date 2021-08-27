@@ -6,7 +6,7 @@
 import os, asyncio, configs
 
 
-currentVersionNo=3.0
+currentVersionNo=3.3
 
 print_log = '''_
 
@@ -14,7 +14,7 @@ print_log = '''_
 
 New Features:
 **Added** - Version Checker command.
-"!version" - This command will show the current verion of your Reco PC Server
+**Added** - Youtube duration feedback in chat when using !url command. 
 
 _'''.format(currentVersionNo)
 
