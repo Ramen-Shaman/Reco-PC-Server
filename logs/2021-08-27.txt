@@ -1,0 +1,193 @@
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Client.start() done, defined at C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py:644> exception=LoginFailure('Improper token has been passed.')>
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 293, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 247, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py", line 660, in start
+    await self.login(*args, bot=bot)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py", line 509, in login
+    await self.http.static_login(token.strip(), bot=bot)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 297, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Client.start() done, defined at C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py:644> exception=LoginFailure('Improper token has been passed.')>
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 293, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 247, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py", line 660, in start
+    await self.login(*args, bot=bot)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py", line 509, in login
+    await self.http.static_login(token.strip(), bot=bot)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 297, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 187, in _on_notify
+    self()
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 88, in __call__
+    self._menu(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 547, in __call__
+    return next(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 187, in _on_notify
+    self()
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 88, in __call__
+    self._menu(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 547, in __call__
+    return next(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 210, in _on_notify
+    descriptors[index - 1](self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 267, in inner
+    callback(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 210, in _on_notify
+    descriptors[index - 1](self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 267, in inner
+    callback(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 210, in _on_notify
+    descriptors[index - 1](self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 267, in inner
+    callback(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 460, in showdownloads
+    def showdownloads(): os.startfile("downloads")
+FileNotFoundError: [WinError 2] The system cannot find the file specified: 'downloads'
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 210, in _on_notify
+    descriptors[index - 1](self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 267, in inner
+    callback(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+ERROR:asyncio:Task exception was never retrieved
+future: <Task finished name='Task-1' coro=<Client.start() done, defined at C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py:644> exception=LoginFailure('Improper token has been passed.')>
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 293, in static_login
+    data = await self.request(Route('GET', '/users/@me'))
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 247, in request
+    raise HTTPException(r, data)
+discord.errors.HTTPException: 401 Unauthorized (error code: 0): 401: Unauthorized
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py", line 660, in start
+    await self.login(*args, bot=bot)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\client.py", line 509, in login
+    await self.http.static_login(token.strip(), bot=bot)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\discord\http.py", line 297, in static_login
+    raise LoginFailure('Improper token has been passed.') from exc
+discord.errors.LoginFailure: Improper token has been passed.
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 210, in _on_notify
+    descriptors[index - 1](self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 267, in inner
+    callback(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+ERROR:pystray._base:An error occurred when calling message handler
+Traceback (most recent call last):
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 398, in _dispatcher
+    return int(icon._message_handlers.get(
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_win32.py", line 210, in _on_notify
+    descriptors[index - 1](self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 267, in inner
+    callback(self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 368, in __call__
+    return self._action(icon, self)
+  File "C:\Users\grava\AppData\Roaming\Python\Python39\site-packages\pystray\_base.py", line 463, in wrapper0
+    return action()
+  File "C:\Users\grava\Desktop\Misc Projects\Learning Python\Epan Bot\Reco-PC-Server\reco.pyw", line 464, in connectInfo
+    'https://discordapp.com/oauth2/authorize?client_id={}&scope=bot&permissions=8'.format(client.user.id))
+AttributeError: 'NoneType' object has no attribute 'id'
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+ERROR:root:2021-08-27 21:48:46 - ['module' object is not callable] while executing [!url] with params [(<discord.ext.commands.context.Context object at 0x000002857249DA30>, 'https://www.youtube.com/watch?v=m5P24B-s7ks')] and named params [{}]
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+ERROR:root:2021-08-27 22:01:31 - ['module' object is not callable] while executing [!url] with params [(<discord.ext.commands.context.Context object at 0x00000293E957AB50>, 'https://www.youtube.com/watch?v=m5P24B-s7ks')] and named params [{}]
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported
+WARNING:discord.client:PyNaCl is not installed, voice will NOT be supported

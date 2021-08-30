@@ -1,7 +1,7 @@
 # --------------- #
 # Reco PC Server  |
 # --------------- #
-# Version No: 3.0 |
+# Version No: 3.3 |
 # --------------- #
 
 # Basic bot dependencies
@@ -28,9 +28,14 @@ from pystray import Icon, Menu, MenuItem
 from PIL import Image
 import webbrowser
 
+# Import pafy
+import pafy
+
 # Modules import - this imports all modules under the modules directory
 # IDEs will complain about unresolved references, but it runs as intended
 from modules import *
+
+
 
 
 # Create a bot client with a description and a command prefix
@@ -55,6 +60,7 @@ async def on_ready():
     print('--------')
     print('Reco PC Server - Version N0: {0}'.format(versionChecker_module.currentVersionNo))
     print('--------')
+    queue_module.currentQueue()
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
 
@@ -147,7 +153,8 @@ async def batterylevel(ctx):
 @client.command()
 @Logger(client)
 async def batteryreport(ctx):
-    await batteryReportGenerator_module.batteryreport(ctx)    
+    await batteryReportGenerator_module.batteryreport(ctx)
+        
 
  
 # Module: camera
