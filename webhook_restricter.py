@@ -60,6 +60,8 @@ webhook_restricter_list=[
     '!whatsapp':True,
     '!wlansignal':True,
     '!youtube':True,
+    '!queue':True,
+    '!play':True,
    
 }, #(copy ends here)
 

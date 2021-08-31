@@ -3,24 +3,34 @@
 # Usage: !Queue website
 # Dependencies: os, asyncio, configs
 
-from modules.video_module import video_duration, video_name
+from modules.video_module import video_name
+from modules import urlLauncher_module
+from lib import helpers
+
 import os, asyncio
 
-from lib import helpers
-import video_module
 
-## TODO: will need to ensure that the queue is empty of not before making a new one
-
-def currentQueue():
-    queue = []
-    print("Queue Generated!")
-
+# keeping track of the progress of the queue.
+queuePlaying = False
+queue = [] 
 
 async def Queue(ctx, txt):
-    url = txt.split(' ')                                                        # get the url from the passed in command arg
-    await ctx.send(video_name(url[0]) + " is being added to the queue!")        # tell the user that something is happening
-    duration = video_duration(url[0])                                           # store the duration of the video in a variable                                                                  # create an empty queue
-    currentQueue.queue.append(url)                                              # add the video to the queue 
+    url = txt.split(" ")                                                        # get the url from the passed in command arg
+    await ctx.send(video_name(url[0]) + " is being added to the queue!")        # tell the user that something is happening       
+    queue.append(url[0])                                                        # add the video to the queue 
+
+
+async def playVideoFromQueue(ctx):
+    if len(queue)==0:
+        await ctx.send("Nothing is in the queue. Please add something by using the !queue command.")
+    else:
+        videoUrl = queue.pop(0)
+        await urlLauncher_module.url(ctx, videoUrl)
+        queuePlaying = True
+
+
+
+
 
 
 

@@ -60,7 +60,6 @@ async def on_ready():
     print('--------')
     print('Reco PC Server - Version N0: {0}'.format(versionChecker_module.currentVersionNo))
     print('--------')
-    queue_module.currentQueue()
     return await client.change_presence(activity=discord.Game(name='with your PC'))
 
 
@@ -399,6 +398,23 @@ async def url(ctx, *txt):
     text=" ".join(txt)
     await urlLauncher_module.url(ctx, text)
 
+# Module: Queue
+# Description: Add a video to the queue
+# Usage: !queue [url]
+@client.command()
+@Logger(client)
+async def queue(ctx, *txt):
+    text=" ".join(txt)
+    await queue_module.Queue(ctx, text)
+
+# Module: Queue
+# Description: Play the song on the top of the queue
+# Usage: !play
+@client.command()
+@Logger(client)
+async def play(ctx, *txt):
+    text=" ".join(txt)
+    await queue_module.playVideoFromQueue(ctx)
 
 # Module: versionChecker
 # Description: Here you can check the current verion of Reco PC Server and it's improvements.
