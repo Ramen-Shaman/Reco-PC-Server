@@ -6,7 +6,7 @@
 import os, asyncio, configs
 
 
-currentVersionNo=3.3
+currentVersionNo=3.5
 
 print_log = '''_
 
@@ -14,7 +14,7 @@ print_log = '''_
 
 New Features:
 **Added** - Version Checker command.
-**Added** - Youtube duration feedback in chat when using !url command. 
+**Added** - Queueing functionality via !queue and !play commands. 
 
 _'''.format(currentVersionNo)
 
